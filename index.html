@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyle Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/00d21fe39e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer | Graphic Designer</p>
+                <h1>Hi,<span> I'm Kyle Christian</span> <br>from Cebu</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My name is Kyle Christian Arches. I live in Malbago Daanbantayan Cebu. I started living in Cebu City when I got to college up until now. My hobbies are playing Video games and Singing. I am an extrovert. I like creating web designs and posters.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills/Traits</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Graphic Design</span><br>Poster and Logo Maker using Photoshop</li>
+                            <li><span>Web Developer</span><br>Website Development for portfolio, assessment, school related web, etc.</li>
+                            <li><span>UI/UX</span><br>Design Web/App Interface</li>
+                            <li><span>MS Office and Other Applications</span><br>MS Word, Excel, Powerpoint, Adobe Photoshop and Illustrator</li>
+                            <li><span>PC/Laptop Trobleshooting</span><br>Cleaning the dust of CPU or laptop, Formatting windows, Fixing lag issues, etc.</li>
+                            <li><span>Programming Languages</span><br>PHP, Javascript</li>
+                            <li><span>Other Knowledge/ About to Learn</span><br>Phpmyadmin, React.js, Adobe After Effects, Wordpress, Canva, Adobe Indesign</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Internship</span><br>Graphic Designer (April – August 2019)</li>
+                            <li><span>Self Employed</span><br>Photo Editor (2019-2022)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Elementary</span><br>Malbago Elementary School (2011)</li>
+                            <li><span>Secondary</span><br>Saint Martin de Porres Academy (2015)</li>
+                            <li><span>College</span><br>University of San Carlos Talamban Campus (2015-Present)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <div class="sub-title">My Services</div>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                </div>
+                <div>
+                    <i class="fa-solid fa-palette"></i>
+                    <h2>Graphic Artist</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Web Developer</h3>
+                    <p>These is the work that I made as a Web Developer</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Graphic Designer</h3>
+                    <p>These are the works I made as a Graphic Designer</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <!-- <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime natus, neque voluptatem consectetur alias laudantium inventore mollitia laborum quidem, exercitationem omnis ea voluptas ipsam minus recusandae! Dolor ducimus explicabo minus!</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div> -->
+        </div>
+        <!-- <a href="#" class="btn">See more</a> -->
+    </div>
+    <br><br><br><br><br>
+    <div id="contact">
+        <div class="contnainer">
+            <div class="row">
+                <div class="contact-left">
+                    <div class="sub-title">Contact Me</div>
+                    <p><i class="fa-solid fa-envelope"></i>kylechristianarches24@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>09999719762</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/kylechristianarhces"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <div id="msg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }   
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbymiY-2GzWcDNlO1Ew0PhobbRuhzqucWpvPm-Ay3COW5hMG1uhKjcJ8dHvKQUnNoPywSQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent Successfully !"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
